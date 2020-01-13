@@ -34,6 +34,5 @@ class Cult
         Cult.all.select {|cult| cult.founding_year == founding_year}
     end
 
-  
 
 end
