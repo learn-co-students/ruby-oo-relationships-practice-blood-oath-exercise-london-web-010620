@@ -1,0 +1,20 @@
+current directory: /home/wojciech/development/module 1/ruby-oo-relationships-practice-blood-oath-exercise-london-web-010620/bundle/ruby/2.6.0/gems/date-3.0.0/ext/date
+/usr/share/rvm/rubies/ruby-2.6.1/bin/ruby -I /usr/share/rvm/rubies/ruby-2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200113-17679-2q9bjr.rb extconf.rb
+checking for timezone in time.h... yes
+checking for altzone in time.h... no
+creating Makefile
+
+current directory: /home/wojciech/development/module 1/ruby-oo-relationships-practice-blood-oath-exercise-london-web-010620/bundle/ruby/2.6.0/gems/date-3.0.0/ext/date
+make "DESTDIR=" clean
+
+current directory: /home/wojciech/development/module 1/ruby-oo-relationships-practice-blood-oath-exercise-london-web-010620/bundle/ruby/2.6.0/gems/date-3.0.0/ext/date
+make "DESTDIR="
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /home/wojciech/development/module 1/ruby-oo-relationships-practice-blood-oath-exercise-london-web-010620/bundle/ruby/2.6.0/gems/date-3.0.0/ext/date
+make "DESTDIR=" install
+/usr/bin/install -m 0755 date_core.so ./.gem.20200113-17679-109b1gj
