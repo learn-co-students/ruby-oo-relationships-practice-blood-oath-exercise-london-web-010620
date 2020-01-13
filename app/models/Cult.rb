@@ -51,7 +51,8 @@ class Cult
   end 
   
   def my_followers_mottos 
-    BloodOath.all.select{|oath| oath == self}.map{|oath| oath.follower.life_motto}
+    followers = BloodOath.all.select{|oath| oath.cult == self}.map{|oath| oath.follower.life_motto}
+    puts followers  
   end 
 
 
