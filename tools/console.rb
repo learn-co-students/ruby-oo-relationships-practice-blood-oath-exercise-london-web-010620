@@ -7,6 +7,15 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
-binding.pry
 
 puts "Mwahahaha!" # just in case pry is buggy and exits
+
+cult_1 = Cult.new("cult_1", "London", 2020, "flatiron") 
+cult_2 = Cult.new("cult_2", "London", 2019, "flatiron") 
+
+follower_1 = Follower.new("Alex", 23, "sex, drugs and alcohol")
+follower_2 = Follower.new("Simon", 25, "sex, drugs and alcohol")
+follower_3 = Follower.new("John", 26, "sex, drugs and alcohol")
+
+cult_1.recruit_follower(follower_1)
+binding.pry
