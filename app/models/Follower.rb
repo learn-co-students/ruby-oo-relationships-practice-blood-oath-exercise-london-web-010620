@@ -11,7 +11,7 @@ class Follower
     end
 
     def cults
-        BloodOath.all.select { |oath| oath.cult == self }
+        BloodOath.all.select { |oath| oath.follower == self }
     end
 
     def join_cult(cult)
@@ -25,5 +25,11 @@ class Follower
     def self.of_a_certain_age(follower_age)
         self.all.select { |follower| follower.age >= follower_age }
     end
+
+    def my_cults_slogans
+        cults.map { |oath| oath.cult }.each { |cult| puts cult.slogan }
+    end
+
+    
 
 end

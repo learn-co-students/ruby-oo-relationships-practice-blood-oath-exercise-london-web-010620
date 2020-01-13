@@ -10,8 +10,12 @@ a = Cult.new("John", "Greece", "1986", "run")
 f = Follower.new("Sam", 13, "hot")
 w = BloodOath.new(d, e)
 r = BloodOath.new(a, f)
+q = BloodOath.new(d, f)
+y = q = BloodOath.new(a, e)
 
 
-binding.pry
+
+
+ binding.pry
 
 puts "Mwahahaha!" # just in case pry is buggy and exits
