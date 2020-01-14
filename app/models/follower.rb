@@ -14,7 +14,7 @@ class Follower
     #def cults??
 
     def join_cults(cult)
-        new_cult = BloodOath.new(cult, self)
+        BloodOath.new(cult, self)
     end
 
     def self.all
