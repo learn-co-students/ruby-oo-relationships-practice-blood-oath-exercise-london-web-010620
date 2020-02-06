@@ -2,7 +2,7 @@ require 'date'
 
 class Bloodoath 
 
-    attr_reader :cult, :follower
+    attr_reader :cult, :follower, :initiation_date
 
     @@all = []
     
@@ -18,8 +18,14 @@ class Bloodoath
         @@all 
     end 
 
+    #return string with initiation date in the format: YYYY-MM-DD
     def initiation_date
-        #return string with initiation date in the format: YYYY-MM-DD
+        @initiation_date
+    end
+
+    #returns the `Follower` instance for the follower that made the very first blood oath
+    def self.first_oath 
+
     end
 
     
