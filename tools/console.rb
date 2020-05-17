@@ -3,10 +3,19 @@ require_relative '../config/environment.rb'
 def reload
   load 'config/environment.rb'
 end
-# Insert code here to run before hitting the binding.pry
-# This is a convenient place to define variables and/or set up new object instances,
-# so they will be available to test and play around with in your console
 
-binding.pry
+d = Cult.new("steve", "uk", "1993", "don't eat")
+e = Follower.new("Jeff", 87, "yolo")
+a = Cult.new("John", "Greece", "1986", "run")
+f = Follower.new("Sam", 13, "hot")
+w = BloodOath.new(d, e)
+r = BloodOath.new(a, f)
+q = BloodOath.new(d, f)
+y = q = BloodOath.new(a, e)
+
+
+
+
+ binding.pry
 
 puts "Mwahahaha!" # just in case pry is buggy and exits
